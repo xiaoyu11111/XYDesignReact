@@ -1,6 +1,6 @@
 {
-  "private": true,
-  "name": "XYComponents",
+  "private": false,
+  "name": "xy-components",
   "version": "1.0.0",
   "scripts": {
     "start": "dumi dev",
