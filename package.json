@@ -1,6 +1,6 @@
 {
   "private": false,
-  "name": "xy-components",
+  "name": "@xiaoyu11111/xy-components",
   "version": "1.0.0",
   "scripts": {
     "start": "dumi dev",
