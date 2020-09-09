@@ -10,8 +10,7 @@ Demo:
 
 ```tsx
 import React from 'react';
-import { Foo } from 'XYComponents';
+import { Foo } from '@xiaoyu11111/xy-components';
 
 export default () => <Foo title="First Demo" />;
 ```
- 
