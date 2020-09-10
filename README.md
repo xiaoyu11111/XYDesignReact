@@ -2,28 +2,17 @@
 
 ## Getting Started
 
-Install dependencies,
+Install,
 
 ```bash
-$ npm i
+$ npm i @xiaoyu11111/xy-components
 ```
 
-Start the dev server,
+Example,
 
 ```bash
-$ npm start
+  import React from 'react';
+  import { Foo } from '@xiaoyu11111/xy-components';
+
+  export default () => <Foo title="First Demo" />;
 ```
-
-Build documentation,
-
-```bash
-$ npm run docs:build
-```
-
-Build library via `father-build`,
-
-```bash
-$ npm run build
-```
-
-npm 源 https://registry.npmjs.org
