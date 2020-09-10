@@ -1,18 +1,18 @@
-# XYReactComponents
+# XY Design React
 
 ## Getting Started
 
 Install,
 
 ```bash
-$ npm i xy-react-components
+$ npm i xy-design-react
 ```
 
 Example,
 
 ```bash
   import React from 'react';
-  import { Foo } from 'xy-react-components';
+  import { Foo } from 'xy-design-react';
 
   export default () => <Foo title="First Demo" />;
 ```

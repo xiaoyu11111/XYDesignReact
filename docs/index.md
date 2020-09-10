@@ -1,6 +1,6 @@
 ---
 hero:
-  title: XYReactComponents
+  title: XY Design React
   desc: React PC端组件
   actions:
     - text: 快速开始 ⟶

@@ -1,6 +1,6 @@
 {
   "private": false,
-  "name": "xy-react-components",
+  "name": "xy-design-react",
   "version": "1.0.0",
   "scripts": {
     "start": "dumi dev",
