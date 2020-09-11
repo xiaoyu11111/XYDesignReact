@@ -17,4 +17,14 @@ Example,
   export default () => <Foo title="First Demo" />;
 ```
 
-欢迎大家提交pr，壮大组件库
+欢迎大家提交 pr，壮大组件库
+
+## 组件开发
+
+Install,
+
+```bash
+$ git clone https://github.com/xiaoyu11111/XYDesignReact.git
+$ npm i
+$ npm run start
+```
