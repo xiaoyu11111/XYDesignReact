@@ -16,3 +16,5 @@ Example,
 
   export default () => <Foo title="First Demo" />;
 ```
+
+欢迎大家提交pr，壮大组件库
