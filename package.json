@@ -1,5 +1,4 @@
 {
-  "private": false,
   "name": "xy-design-react",
   "version": "1.0.1",
   "scripts": {
@@ -35,9 +34,26 @@
     "@umijs/test": "^3.0.5",
     "dumi": "^1.0.9",
     "father-build": "^1.17.2",
-    "gh-pages": "^3.0.0",
+    "gh-pages": "^3.1.0",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
     "yorkie": "^2.0.0"
-  }
+  },
+  "description": "xy-design-react by dumi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoyu11111/XYDesignReact"
+  },
+  "author": "XiaoYu",
+  "keywords": [
+    "xy-design-react",
+    "dumi",
+    "react",
+    "design",
+    "xy"
+  ],
+  "bugs": {
+    "url": "https://github.com/xiaoyu11111/XYDesignReact/issues"
+  },
+  "homepage": "https://github.com/xiaoyu11111/XYDesignReact#readme"
 }
