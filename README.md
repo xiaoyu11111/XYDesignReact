@@ -11,10 +11,17 @@ $ npm i xy-design-react
 Example,
 
 ```bash
-  import React from 'react';
-  import { Foo } from 'xy-design-react';
+$ import React from 'react';
+$ import { Foo } from 'xy-design-react';
 
-  export default () => <Foo title="First Demo" />;
+$ export default () => <Foo title="First Demo" />;
+```
+
+##组件链接
+
+```bash
+$ https://xiaoyu11111.github.io/XYDesignReact/
+
 ```
 
 欢迎大家提交 pr，壮大组件库
