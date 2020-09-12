@@ -3,3 +3,4 @@
 /.eslint*
 .idea/
 /docs
+/docs-dist
