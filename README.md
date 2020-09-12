@@ -19,10 +19,7 @@ $ export default () => <Foo title="First Demo" />;
 
 ##组件链接
 
-```bash
-$ https://xiaoyu11111.github.io/XYDesignReact/
-
-```
+[XYDesignReact](https://xiaoyu11111.github.io/XYDesignReact/)
 
 欢迎大家提交 pr，壮大组件库
 
