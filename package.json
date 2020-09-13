@@ -39,6 +39,7 @@
     "prettier": "^1.19.1",
     "yorkie": "^2.0.0"
   },
+  "engines": { "node": ">=10.13.0" },
   "description": "xy-design-react by dumi",
   "repository": {
     "type": "git",
