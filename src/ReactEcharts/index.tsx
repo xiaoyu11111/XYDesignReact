@@ -5,7 +5,7 @@ import echarts from 'echarts';
 import {
   chartLightTheme,
   chartDarkTHeme,
-} from '../../public/comon/echartThemes.js';
+} from '../../public/comon/echartThemes';
 
 echarts.registerTheme('chartLightTheme', chartLightTheme);
 echarts.registerTheme('chartDarkTHeme', chartDarkTHeme);

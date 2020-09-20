@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-const colorLight20 = [
+const colorLight20: any = [
   '#2e5bff',
   '#8c54ff',
   '#00c1d4',
@@ -22,7 +22,7 @@ const colorLight20 = [
   '#ffb357',
   '#85d656',
 ];
-export const chartLightTheme = {
+export const chartLightTheme: any = {
   color: colorLight20,
   backgroundColor: 'rgba(0, 0, 0, 0)',
   grid: {
@@ -647,7 +647,7 @@ export const chartLightTheme = {
   },
 };
 
-let chartDarkThemeOption = {
+let chartDarkThemeOption: any = {
   color: [
     '#1c3fd9',
     '#6c3dd9',
@@ -853,7 +853,7 @@ let chartDarkThemeOption = {
   },
 };
 
-export const chartDarkTHeme = _.defaultsDeep(
+export const chartDarkTHeme: any = _.defaultsDeep(
   chartDarkThemeOption,
   chartLightTheme,
 );
