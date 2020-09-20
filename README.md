@@ -11,10 +11,24 @@ $ npm i xy-design-react
 Example,
 
 ```bash
-$ import React from 'react';
-$ import { Foo } from 'xy-design-react';
+import React, { useState } from 'react';
+import { CodeEditor } from 'xy-design-react';
 
-$ export default () => <Foo title="First Demo" />;
+export default () => {
+  const [value, setValue] = useState(`(() => {
+return XYDesignReact
+})()`);
+
+  return (
+    <CodeEditor
+      theme="default"
+      value={value}
+      onChange={val => {
+        setValue(val);
+      }}
+    />
+  );
+};
 ```
 
 ##组件链接
