@@ -19,7 +19,7 @@ export default ({
   ...rest
 }: {
   value: string;
-  onChange: () => {};
+  onChange: Function;
   className: string;
   mode: string;
   theme: string;
