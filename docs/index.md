@@ -19,6 +19,6 @@ footer: Copyright © XiaoYu
 ## 相关资源
 
 [react-codemirror](https://github.com/JedWatson/react-codemirror) <br/>
-[react-echarts](https://github.com/somonus/react-echarts)<br/>
+[echarts-for-react](https://github.com/hustcc/echarts-for-react)<br/>
 [Dumi-组件/文档研发工具](https://d.umijs.org/)<br/>
 [Umi-React 应用开发框架](https://umijs.org/)<br/>
