@@ -14,19 +14,23 @@ export default ({
   value,
   onChange,
   className,
+  mode = 'javascript',
+  theme = 'xq-dark',
   ...rest
 }: {
   value: string;
   onChange: () => {};
   className: string;
+  mode: string;
+  theme: string;
 }) => {
   return (
     <React.Fragment>
       <CodeMirror
         value={value}
         options={{
-          mode: 'javascript',
-          theme: 'xq-dark',
+          mode,
+          theme,
           tabSize: 2,
           lineNumbers: true,
           line: true,

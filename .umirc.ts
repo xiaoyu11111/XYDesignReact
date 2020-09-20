@@ -8,5 +8,8 @@ export default defineConfig({
   publicPath: '/XYDesignReact/',
   exportStatic: {},
   mode: 'site',
+  resolve: {
+    previewLangs: ['jsx', 'tsx'],
+  },
   // more config: https://d.umijs.org/config
 });
