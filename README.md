@@ -33,7 +33,7 @@ return XYDesignReact
 
 ##组件链接
 
-[XYDesignReact](https://xiaoyu11111.github.io/XYDesignReact/)
+[XYDesignReact](https://zengxiaotian.gitee.io/XYDesignReact)
 
 欢迎大家提交 pr，壮大组件库
 

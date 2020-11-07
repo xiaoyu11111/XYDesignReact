@@ -48,33 +48,39 @@ return {
 })()`);
 
   let [option, setOption] = useState(defaultOption);
-  return (
-    <React.Fragment>
-      <CodeEditor
-        value={value}
-        onChange={val => {
-          setValue(val);
-        }}
-      />
-      <button
-        onClick={() => {
-          try {
-            let overWriter = eval(value);
-            if (_.isEmpty(overWriter)) {
-              setOption({});
-            } else {
-              setOption(overWriter);
-            }
-          } catch (error) {}
-        }}
-      >
-        确定
-      </button>
-      <br />
-      {_.isEmpty(option) ? null : (
-        <ReactEcharts theme="light" option={option} />
-      )}
-    </React.Fragment>
-  );
+  let dom = null;
+  try {
+    dom = (
+      <React.Fragment>
+        <CodeEditor
+          value={value}
+          onChange={val => {
+            setValue(val);
+          }}
+        />
+        <button
+          onClick={() => {
+            try {
+              let overWriter = eval(value);
+              if (_.isEmpty(overWriter)) {
+                setOption({});
+              } else {
+                setOption(overWriter);
+              }
+            } catch (error) {}
+          }}
+        >
+          确定
+        </button>
+        <br />
+        {_.isEmpty(option) ? null : (
+          <ReactEcharts theme="light" option={option} />
+        )}
+      </React.Fragment>
+    );
+  } catch (error) {
+    dom = null;
+  }
+  return dom;
 };
 ```
