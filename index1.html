@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/xiaoyu.svg" />
+    <link rel="stylesheet" href="/XYDesignReact/umi.css" />
+    <script>
+      window.routerBase = "/XYDesignReact";
+    </script>
+    <script>
+      //! umi version: 3.2.20
+    </script>
+    <title>🖥 浏览器兼容性</title>
+  </head>
+  <body>
+    <button onclick="getSSML()" style="width: 100px; height: 40px;"></button>
+    <textarea id= "text" cols= "30" rows= "10"></ textarea>
+    <script>
+      function getSSML() {
+      str=document. getElementById( "text").value
+      const voiceDict = {
+      '旁白':`<voice name="zh-CN-YunyeNeural"><prosody rate="0%" pitch="0%">{content}</prosody></voice>`,
+      '小唐':`<voice name="zh-CN-YunyangNeural"><prosody rate="0%" pitch="10%">{content}</prosody></voice>`,
+      '系统':`<voice name="zh-CN-XiaochenNeural"><prosody rate="9%" pitch="0%">{content}</prosody></voice>`,
+      '悟空':`<voice name="zh-CN-YunxiNeural"><mstts:express-as  role="YoungAdultMale"><prosody rate="0%" pitch="-8%">{content}</prosody></mstts:express-as></voice>`,
+      '玲玲1':`<voice name="zh-CN-XiaoshuangNeural"><prosody rate="0%" pitch="0%">{content}</prosody></voice>`,
+      '玲玲2':`<voice name="zh-CN-XiaomoNeural"><prosody rate="9%" pitch="0%">{content}</prosody></voice>`,
+      '玲玲3':`<voice name="zh-CN-XiaoyanNeural"><prosody rate="5%" pitch="0%">{content}</prosody></voice>`,
+      '老妈':`<voice name="zh-CN-XiaoxuanNeural"><prosody rate="0%" pitch="0%">{content}</prosody></voice>`,
+      '老妈1':`<voice name="zh-CN-XiaoqiuNeural"><prosody rate="9%" pitch="0%">{content}</prosody></voice>`,
+      '路人1': `<voice name="zh-CN-YunyangNeural"><prosody rate="13%" pitch="-5%">{content}</prosody></voice>`,
+      '路人2': `<voice name="zh-CN-YunxiNeural"><prosody rate="5%" pitch="0%">{content}</prosody></voice>`,
+      '路人3': `<voice name="zh-CN-YunxiNeural"><prosody rate="5%" pitch="-19%">{content}</prosody></voice>`,
+      '路人4':`<voice name="zh-CN-YunyeNeural"><mstts:express-as style="calm" role="SeniorMale"><prosody rate="8%" pitch="-7%">{content}</prosody></mstts:express-as></voice>`,
+      '女孩':`<voice name="zh-CN-XiaoyouNeural"><prosody rate="0%" pitch="0%">{content}</prosody></mstts:express-as></voice>`,
+      '男孩': `<voice name="zh-CN-YunxiNeural"><prosody rate="-1%" pitch="21%">{content}</prosody></voice>`,
+      }
+        str = str.replaceAll('：', ':')
+        arr = str.split('\n').filter(item => item)
+        let newStr = `<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">`
+        arr.map(item => {
+          if (item.includes(':')) {
+            newStr += voiceDict[item.split(':')[0]].replaceAll('{content}', item.split(':')[1]).replace('(', `<break time="`).replace(')', `"/>`)
+            return
+          }
+            newStr += voiceDict['旁白'].replaceAll('{content}', item).replace('(', `<break time="`).replace(')', `"/>`).replace('（', `<break time="`).replace('）', `"/>`)
+        })
+        newStr += `</speak>`
+        return newStr
+    }
+    </script>
+  </body>
+</html>
